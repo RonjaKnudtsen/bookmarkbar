@@ -1,0 +1,70 @@
+html,
+body {
+  font: menu;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+}
+
+#bookmark-bar {
+  background: hsl(0, 0%, 90%);
+  height: 30px;
+  left: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+.item {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.item h2 {
+  font: inherit;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0;
+  padding: 0 7px 0 26px;
+  position: relative;
+}
+
+.item h2::before {
+  background: hsl(0, 0%, 70%);
+  content: "";
+  display: block;
+  height: 16px;
+  left: 7px;
+  position: absolute;
+  top: 3px;
+  width: 16px;
+}
+
+// From drag.html
+#container {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#drag-target {
+  background-color: red;
+  //hsl(0, 0%, 50%);
+ // height: 80px;
+  position: absolute;
+
+ // width: 80px;
+}
+.release, .move{
+    transition: left 1s, top 1s;
+    transition-timing-function: ease-out;
+}
+
