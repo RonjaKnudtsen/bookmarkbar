@@ -63,8 +63,12 @@ body {
 
  // width: 80px;
 }
-.release, .move{
+.move{
     transition: left 1s, top 1s;
     transition-timing-function: ease-out;
 }
-
+.fade{
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-timing-function: ease-in-out;
+}
